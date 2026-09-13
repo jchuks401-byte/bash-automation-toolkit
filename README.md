@@ -41,7 +41,7 @@ file-handling/
 - delete_file.sh  
 - rename_file.sh  
 
-menu.sh (integration in progress)
+menu.sh
 
 ---
 
@@ -54,27 +54,24 @@ Managing file operations through the command line can be repetitive and unstruct
 ## Steps Taken
 
 - Built separate scripts for each operation  
-- Added input validation  
-- Implemented confirmation for file deletion  
-- Organized scripts into a modular structure  
+- Implemented input validation  
+- Added confirmation prompts for deletion  
+- Combined scripts into a menu-driven system  
 
 ---
 
 ## Solution
 
-Developed a Bash-based system to handle file operations efficiently, with a structure ready for menu integration.
+Developed a Bash-based CLI tool that integrates file operations and utilities into a single interactive system.
 
 ---
 
 ## Result
 
-Core file operation scripts were successfully built and tested.  
-Integration into a menu-driven system is in progress.
+Successfully built a working command-line tool with modular design and menu-based interaction, improving usability and workflow efficiency.
 
 ---
+## Author
 
-## Next Improvements
-
-- Add error handling  
-- Prevent overwriting files  
-- Improve menu interaction
+John Agbasiere  
+IT Student | Aspiring IT Support / Systems Professional
