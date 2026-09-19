@@ -1,39 +1,17 @@
 
  #!/bin/bash
-
-#create file function 
+# create file function 
 create_file() {
-  echo "Enter filename:"
-  read filename 
-  touch "$filename"
-  echo "File created"
+  echo "Enter file name:"
+ read filename
+ touch "$filename"
+echo "file created"
 }
 
-#read file function
-read_file() {
-   echo "Enter filename:"
+#read_file 
+   echo  "Enter filename:"
  read filename 
-  cat "$filename"
-}
-
-#delete file function 
-delete_file() {
-  echo "Enter filename:"
-read filename
- rm "$filename"
-  echo "File deleted"
-}
-
-
-#rename file function 
-rename_file() {
-  echo "Enter current filename:"
-read old 
-  echo "Enter new filename:"
-mv "$old" "$new"
-  echo "File renamed"
-}
-
+ cat $
 #Say Hello Function  
 say_hello() {
  echo " what is your name? "
@@ -181,18 +159,14 @@ while true
  do
 
 echo "Pick a number:"
-echo "1. Create File"
-echo "2. Read File"
-echo "3. Delete File"
-echo "4. Rename File"
-echo "5. Say Hello"
-echo "6. Check Age"
-echo "7. Show Date"
-echo "8. Calculator"
-echo "9. Even or Odd"
-echo "10. Guess the number"
-echo "11. show countries"
-echo "12. exit"
+echo "1. Say Hello"
+echo "2. Check Age"
+echo "3. Show Date"
+echo "4. Calculator"
+echo "5. Even or Odd"
+echo "6. Guess the number"
+echo "7. show countries"
+echo "8. exit"
 
 read number
 if ! [[ $number =~ ^[0-9]+$ ]]
@@ -202,42 +176,30 @@ continue
   fi
 
 case $number in
-1) create_file
-   ;;
-
-2) read_file
-   ;;
-
-3)delete_file
-  ;;
-
-4) rename_file
-  ;;
- 
-5)
+1)
    say_hello
    ;;
-6)
+2)
    check_age 
    ;;
-7)
+3)
   check_date 
   ;;
-8) 
+4) 
   calculator 
   ;;
-9)
+5)
   check_even_odd
   ;;
-10) 
+6) 
   guess_number 
   ;; 
 
-11)
+7)
   show_countries 
   ;;
 
-12) 
+8) 
   echo "Goodbye"
 break
   ;;
